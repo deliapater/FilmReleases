@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
-class Film extends Component{
-  render(){
-    const {children, name} = this.props
+    const Film = (props) => {
 
-    return (
-      <div className="film">
-      <h4>{children}</h4>
-      <p>{name}</p>
-      </div>
-    )
-  }
-}
+      return (
+        <div className="film">
+        <table>
+        <tr>
+        <td><h4 className="film-name">{props.name}</h4></td>
+        <td><a href={props.link}></a></td>
+        </tr>
+        </table>
+        </div>
+      );
+    }
+
 export default Film;
