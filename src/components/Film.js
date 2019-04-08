@@ -6,8 +6,7 @@ import React, { Component } from 'react';
         <div className="film">
         <table>
         <tr>
-        <td><h4 className="film-name">{props.name}</h4></td>
-        <td><a href={props.link}></a></td>
+        <td><a href={props.link}><h4 className="film-name">{props.name}</h4></a></td>
         </tr>
         </table>
         </div>
